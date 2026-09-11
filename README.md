@@ -1,6 +1,6 @@
 # Gaussian Splatting
 
-Ce dépôt sert de trace écrite du projet que j'ai réalisé sous la direction de Damien Marchal sur le Gaussian Splatting de mai à juin 2026. Vous y trouverez un rapport ci-dessous ainsi qu'un fichier markdown expliquant comment utiliser Difix3D (sur une instance RunPod dans mon cas).
+Ce dépôt sert de trace écrite du projet que j'ai réalisé sous la direction de Damien Marchal sur le Gaussian Splatting de mai à juin 2026. Vous y trouverez un rapport ci-dessous ainsi qu'un [fichier markdown](https://github.com/fsol1/gaussian-splatting/blob/main/difix3d.md) expliquant comment utiliser [Difix3D](https://research.nvidia.com/labs/toronto-ai/difix3d/) (sur une instance RunPod dans mon cas).
 
 ## Présentation du projet
 
