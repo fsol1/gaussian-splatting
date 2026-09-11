@@ -11,7 +11,8 @@ d’une vidéo d’une pièce, de la reconstruire digitalement. L’objectif de 
 de prendre connaissance de ces méthodes, de les utiliser et potentiellement de les
 améliorer. Plus précisément, on s'intéresse à la reconstruction par Gaussian Splating, qui
 permet de passer d’un ensemble d’images à une scène 3D composées de gaussiennes 3D.
-Recherche sur l’état de l’art
+
+## Recherche sur l’état de l’art
 
 Au commencement du projet, le but était alors de m’informer sur les méthodes à l’état de
 l’art. Ainsi en plus du Gaussian Splating, on peut citer NeRF, qui est une technique qui utilise
@@ -30,17 +31,28 @@ les modèles les plus performants.
 La première expérimentation avait pour objectif de déterminer si la qualité des images
 utilisées lors de la reconstruction avait un impact sur celle-ci. Pour cela j’ai pris un ensemble
 d’images d’un appartement, que j’ai décliné trois fois, la copie originale, une copie de qualité
-moyenne et une copie de mauvaise qualité. J’ai ensuite utilisé le site Marble pour
-reconstruire des scènes 3D à partir des différents ensembles. On constate ainsi que les
+moyenne et une copie de mauvaise qualité.
+
+![](rapport_captures/1.png)
+
+J’ai ensuite utilisé le site Marble pour reconstruire des scènes 3D à partir des différents ensembles. On constate ainsi que les
 images de meilleure qualité donnent les reconstructions de meilleure qualité.
-Génération de nouveaux points de vue avec un modèle de diffusion
+
+![](rapport_captures/2.png)
+
+## Génération de nouveaux points de vue avec un modèle de diffusion
 J’ai voulu ensuite tester la capacité des modèles de diffusion à générer de nouveaux points
 de vue d’une scène. J’ai donc demandé à Nano Banana, le modèle de diffusion de Google,
 de générer un nouveau point de vue d’une scène dont je lui avais fourni une image.
+
+![](rapport_captures/3.png)
+
 Cependant les résultats n’étaient pas satisfaisants, non seulement le modèle avait changé
 les couleurs de la scène, certains objets peuvent être modifiés, disparaître ou encore
 bouger. Il est donc compliqué pour ce modèle de générer un nouveau point de vue qui soit
 cohérent avec le point de vue de référence donné.
+
+![](rapport_captures/4.png)
 
 ## Correction d’artéfacts de reconstruction grâce à un modèle de diffusion
 
@@ -51,6 +63,8 @@ captures d’une scène reconstruite avec pour prompt de corriger les artéfacts
 présents dans l’image. Cette fois-ci le modèle a bien réussi à retirer les imperfections des
 images, cependant on peut difficilement se reposer dessus car les corrections ne sont pas
 forcément cohérentes entre différentes images.
+
+![](rapport_captures/5.png)
 
 ## Modèles de diffusion et Gaussian Splating
 
@@ -73,6 +87,8 @@ scène en entrée, en extrait des images de profondeur que l’on donne à un co
 à son tour donner un prompt à un modèle de diffusion (Flux Kontext). Cependant je n’ai pas
 pu tester si cette approche était viable.
 
+![](rapport_captures/6.png)
+
 ## Difix3D
 
 Le reste du projet, je me suis intéressé à Difix3D, un algorithme publié par NVIDIA qui
@@ -92,6 +108,8 @@ la netteté dans les images traitées et à retirer les artéfacts. Cependant, s
 faire sont trop importantes, le modèle ne parvient pas à les corriger, par exemple un pied
 manquant sur une chaise.
 
+![](rapport_captures/7.png)
+
 J’ai ensuite expérimenté avec Difix3D, pour faire cela j’ai dû créer une instance GPU sur
 Runpod afin d’avoir assez de VRAM pour pouvoir utiliser le modèle. J’ai d’abord utilisé
 l’algorithme sur une vidéo de deux minutes d’un robot avec l’implémentation originale
@@ -103,3 +121,5 @@ cette fois-ci avec une courte vidéo d’un camion. J’ai alors constaté que c
 fournissait une meilleure reconstruction comparée à une reconstruction par Gaussian
 Splatting classique. A la suite de ça, j’ai aussi écrit un readme détaillé avec toutes les
 commandes nécessaires afin d’utiliser Difix3D, avec des images de mes expérimentations.
+
+![](rapport_captures/8.png)

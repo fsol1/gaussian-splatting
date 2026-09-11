@@ -159,16 +159,16 @@ Gsplat :
 
 | 30000 itérations | 60000 itérations |
 |-------|-------|
-| ![A](truck/captures/gsplat_datafactor_4_30K.png) | ![A](truck/captures/gsplat_datafactor_4_60K.png) |
+| ![](truck/captures/gsplat_datafactor_4_30K.png) | ![](truck/captures/gsplat_datafactor_4_60K.png) |
 
 Difix3D sans checkpoint :
 
 | 30000 itérations | 60000 itérations |
 |-------|-------|
-| ![A](truck/captures/difix3d_datafactor_4_30K.png) | ![A](truck/captures/difix3d_datafactor_4_60K.png) |
+| ![](truck/captures/difix3d_datafactor_4_30K.png) | ![](truck/captures/difix3d_datafactor_4_60K.png) |
 
 Difix3D avec checkpoint :
 
 | 60000 itérations |
 |-------|
-| ![A](truck/captures/difix3d_datafactor_4_60K_ckpt.png) |
+| ![](truck/captures/difix3d_datafactor_4_60K_ckpt.png) |
