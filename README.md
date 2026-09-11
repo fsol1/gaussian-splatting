@@ -1,3 +1,7 @@
+# Gaussian Splatting
+
+Ce dépôt sert de trace écrite du projet que j'ai réalisé sous la direction de Damien Marchal sur le Gaussian Splatting de mai à juin 2026. Vous y trouverez un rapport ci-dessous ainsi qu'un fichier markdown expliquant comment utiliser Difix3D (sur une instance RunPod dans mon cas).
+
 ## Présentation du projet
 
 Pour l’étude et la simulation de robots déformables, des scènes en 3D réalistes sont

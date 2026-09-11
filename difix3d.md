@@ -151,7 +151,7 @@ Aussi le drapeau `--no-normalize-world-space` est présent dans la commande indi
 
 ## Conversion d'un fichier .pt vers un fichier .ply
 
-Afin de pouvoir visualiser les checkpoints, il faut les convertir en fichier .ply. Pour faire cela j'utilise un script écrit par un utilisateur (https://github.com/nv-tlabs/Difix3D/pull/23/commits/4c4544c75a25fa66cf0859f269101917cfe3e368), que j'ai importé dans Google Colab (https://colab.research.google.com/drive/1Bh8SNmupzJYjVsiEijWKbC5JvyrEvHkK?usp=sharing).
+Afin de pouvoir visualiser les checkpoints, il faut les convertir en fichier .ply. Pour faire cela j'utilise un script écrit par un utilisateur (https://github.com/nv-tlabs/Difix3D/pull/23/commits/4c4544c75a25fa66cf0859f269101917cfe3e368), que j'ai importé dans Google Colab.
 
 ## Expériences
 
